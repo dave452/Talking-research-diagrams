@@ -967,7 +967,7 @@ plot_lattice(8)
 fig = plt.figure(figsize=(4,4))
 ax = fig.add_subplot()
 def coarsegrain(n):
-    image = plt.imread('shark.png')
+    image = plt.imread('IMG_20221222_223856616_MFNR.jpg')
     newimage = image
     #ax.clf()
     for x in range(image.shape[0]):
@@ -982,4 +982,4 @@ ns = np.arange(10, -1 , -1)
 
 print(ns)
 anim = FuncAnimation(fig, coarsegrain, frames=ns, blit=True, interval = 200)
-anim.save('cg.gif', writer='Pillow')
+anim.save('c_catg.gif', writer='Pillow')
